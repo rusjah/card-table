@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Card({song}) {
+function Card({song, bgcolor}) {
   return (
-    <div className="card w-96 h-[30vh] bg-base-100 shadow-xl opacity-80 border-4 border-orange-950">
+    <div className={`${bgcolor} card  w-96 h-[30vh] bg-base-100 shadow-xl opacity-80 border-4 border-orange-950`}>
     <div className="card-body w-full">
         <h2 className="card-title text-orange-950">{song.name} by {song.artist}</h2>
         <p className='text-orange-800 text-lg'> Release was on {song.day}.{song.month}.{song.year} </p>
