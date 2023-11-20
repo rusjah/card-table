@@ -1,15 +1,15 @@
 import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
-import Card from './Card'
-import songs from '../data'
+import Nav from '../layout/Nav'
+import Footer from '../layout/Footer'
+import Card from '../layout/Card'
+import songs from '../../data'
 
 function Table() {
   return (
-    <> <Nav  />
+    <> 
     <div className='grow p-10 flex gap-4 flex-wrap justify-around  bg-gradient-to-r from-rose-100 to-blue-600'>
         <div className="overflow-x-auto w-full">
-            <table className="table table-zebra">
+            <table className="table table-zebranpm">
                 {/* head */}
                 <thead>
                 <tr>
@@ -35,7 +35,6 @@ function Table() {
             </table>
         </div>
     </div>
-    <Footer />
     </>
   )
 }
